@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type = "text/javascript">
+function distance(x1, y1, x2, y2)
+{
+    return Math.sqrt(Math.pow((x2-x1), 2), Math.pow((y2-y1), 2));
+}
+function sleep(ms) 
+{
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function draw() 
+{
+  var canvas = document.getElementById('triangle_draw');
+  var ctx = canvas.getContext("2d");
+  x = Math.floor(Math.random() * 800)+50;
+  y = Math.floor(Math.random() * 800)+50;
+  while(true)
+  {
+    nextpoint = Math.floor(Math.random() * 3)+1;
+    switch(nextpoint) {
+            case 1:
+                x = 450 + (450 - x) / 2;
+                y = y / 2;
+                ctx.fillStyle = 'red';
+                break;
+            case 2:
+                x = x / 2
+                y = 900 - (900 - y) / 2
+                ctx.fillStyle = 'green';
+                break;
+            case 3:
+                x = 900 - (900 - x) / 2
+                y = 900 - (900 - y) / 2;
+                ctx.fillStyle = 'blue';
+        }
+    ctx.fillRect(x,y,1,1);
+    await sleep(2);
+  }
+}
+</script>
+</head>
+
+<body onload="draw();">
+<canvas id="triangle_draw" width="900" height="900" ></canvas>
+
+</body>
+</html>

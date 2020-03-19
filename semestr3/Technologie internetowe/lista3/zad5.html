@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moja strona domowa</title>
+        <style type="text/css">
+            ul{
+                list-style-image: url(kropka.png);
+            } 
+            ul.b{
+                list-style: none;
+            }
+            li.b::before{
+                content: url(kropka.png);
+            }
+            ul.c{
+                list-style: none;
+            }
+            li.c{
+                background-image: url(kropka.png);
+                background-repeat: no-repeat;
+                background-position: -5px;
+            }
+            span{
+                position: relative;
+                left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>raz</li>
+            <li>dwa</li>
+            <li>trzy</li>
+        </ul>
+        <ul class="b">
+            <li class="b">raz</li>
+            <li class="b">dwa</li>
+            <li class="b">trzy</li>
+        </ul>
+        <ul class="c">
+                <li class="c"><span>raz</span></li>
+                <li class="c"><span>dwa</span></li>
+                <li class="c"><span>trzy</span></li>
+            </ul>
+    </body>
+</html>

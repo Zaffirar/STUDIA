@@ -1,0 +1,11 @@
+{
+	"card_number": "1234-1234-1234-1234",
+    "date": "11/22",
+    "CVC": "123",
+    "first_name": "Wiktor",
+    "last_name": "Hamberger",
+    "email": "308982@uwr.edu.pl",
+    "tel_number": 123456789,
+    "amount": 500
+     
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- Hello.wsdl
+- Copyright (c) 2007 HerongYang.com, All Rights Reserved.
+-->
+<definitions name="Organization"
+             targetNamespace="urn:Organization"
+             xmlns:tns="urn:Organization"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
+<message name="Add_in_msg">
+  <part name="int1" type="s:int"/>
+  <part name="int2" type="s:int"/>
+</message>
+
+<message name="Add_out_msg">
+  <part name="value" type="s:int"/>
+</message>
+
+<portType name="Calculator">
+  <operation name="addNumbers">
+    <input message="Add_in_msg"/>
+    <output message="Add_out_msg"/>
+  </operation>
+</portType>
+
+<binding type="Calculator" name="b1">
+   <soap:binding style="document"
+   transport="http://schemas.xmlsoap.org/soap/http" />
+   <operation name="addNumbers">
+     <soap:operation soapAction="http://lista1wh.azurewebsites.net/lista07/zad6/main.php"/>
+     <input><soap:body use="literal"/></input>
+     <output><soap:body use="literal"/></output>
+  </operation>
+</binding>
+<service name="MyService">
+  <documentation>Returns a greeting string(not really).
+  </documentation>
+  <port name="MyPort" binding="tns:b1">
+   <soap:address
+  location="http://lista1wh.azurewebsites.net/lista07/zad6/main.php"/>
+  </port>
+ </service>
+</definitions>

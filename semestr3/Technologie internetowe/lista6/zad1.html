@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Generator przemówień</title>
+
+        <script src="jquery-3.1.1.js" type="text/javascript"> </script>
+        <script type="text/javascript">
+            function randomarry(a){
+                for(var i=a.length;i--;){
+                    var j=Math.floor((i+1)*Math.random());
+                    a[i], a[j] = a[j], a[i];
+                }
+                return a;
+            }
+            var t1 = new Array("Koleżanki i koledzy", "Z drugiej strony", "Podobnie", "Nie zapominajmy jednak, że", "W ten sposób", "Praktyka dnia codziennego dowodzi, że",
+            "Wagi i znaczenia tych problemów nie trzeba szerzej uzasadniać, ponieważ", "Różnorakie bogate doświadczenia", "Troska organizacji, a szczególnie,", "Wyższe założenia ideowe, a także");
+            var t2 = new Array("realizacja nakreślonych zadań programowych", "zakres i miejsce szkolenia kadr", "stały wzrost ilości i zakres naszej aktywności",
+            "aktualna struktura organizacji", "nowy model działalności organizacyjnej", "dalszy rozwój różnych form działalności", "stałe zabezpieczenie informacyjno – propagandowe naszej działalności",
+            "wzmocnienie i rozwijanie struktur", "konsultacja z szerokim aktywem", "rozpoczęcie powszechnej akcji kształtowania postaw");
+            var t3 = new Array("zmusza nas do przeanalizowania", "spełnia istotną rolę w kształtowaniu", "wymaga sprecyzowania i określenia", "pomaga w przygotowaniu i realizacji",
+            "zabezpiecza udział szerokiej grupie w kształtowaniu", "spełnia ważne zadania w wypracowaniu", "umożliwia w większym stopniu tworzenie,", "powoduje docenianie wagi",
+            "przedstawia interesującą próbę sprawdzenia", "pociąga za sobą proces wdrażania i unowocześniania");
+            var t4 = new Array("istniejących warunków administracyjno - finansowych", "dalszych kierunków rozwoju", "systemu powszechnego uczestnictwa", "postaw uczestników wobec zadań stawianych przez organizację",
+            "nowych propozycji", "kierunków postępowego wychowania", "systemu szkolenia kadr odpowiadającego potrzebom", "odpowiednich warunków aktywizacji", "modelu rozwoju", "form oddziaływania");
+            $(document).ready(function() {
+                t1 = randomarry(t1);
+                t2 = randomarry(t2);
+                t3 = randomarry(t3);
+                t4 = randomarry(t4);
+                var iter = t1.length-1;
+                $(".przycisk").click(function() {
+                    var zdanie=t1[iter];
+                    zdanie+=" "+t2[iter];
+                    zdanie+=" "+t3[iter];
+                    zdanie+=" "+t4[iter];
+                    iter-=1;
+                    if(iter<0){
+                        t1 = randomarry(t1);
+                        t2 = randomarry(t2);
+                        t3 = randomarry(t3);
+                        t4 = randomarry(t4);
+                        iter = t1.length-1
+                    }
+                    $("#wypowiedź").val(zdanie+".");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Uniwersalny kod przemówień został nadesłany w pierwszej połowie lat 80-tych do „Polityki” przez anonimowego autora, 
+            <br>kiedy ta jeszcze wychodziła w formacie gazetowym. Autor, mimo próśb redakcji , nie zgłosił się po honorarium.</p>
+        <input value="Generuj" class="przycisk" type="button">
+        <p>
+            Twoja wygenerowana wypowiedź:
+            <input type="text" id="wypowiedź" size="250" value="">
+        </p>
+        <img src="generator.jpg" alt="cokolwiek">
+    </body>
+</html>

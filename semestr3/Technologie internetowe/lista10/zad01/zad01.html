@@ -13,6 +13,7 @@
             const $submitBtn = $form.find(":submit");
             $form.on("submit", function(e) {
                 e.preventDefault();
+                $submitBtn.prop("disabled", true);
                 $.ajax({
                     url: apiUrl + "/posts",
                     method : "POST",
@@ -23,7 +24,12 @@
                         mail: $inputMali.val()
                     }
                 })
-                
+                .done(function(res) {
+                    console.log("Użytkownik został dodany do bazy", res);
+                })
+                .always(function() {
+                    $submitBtn.prop("disabled", false);
+                });
             });
             
         </script>

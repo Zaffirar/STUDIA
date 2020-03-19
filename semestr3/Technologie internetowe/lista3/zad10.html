@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moja strona domowa</title>
+        <style>
+                a
+                {
+                    font-family: Arial, sans-serif;
+                    font-size: 12pt;
+                    font-weight: bold;
+                    display: block;
+                    padding: 8px 40px;
+                    height:20px;width:40px;
+                    border: 1px solid #7a7a7a;
+                    background: -webkit-linear-gradient(top, #a9a9a9 0%, #929292 16px, #818181 17px, #989898 100%);
+                    -webkit-transition: 3s;
+                }
+                a:hover
+                {
+                    font-family: fantasy;
+                    font-size: 15pt;
+                }
+                
+                a:active
+                {
+                    font-size: 7pt;
+                }
+                
+                input {
+                width:100px;background-color:#fff; color:#000; border: 3px dashed #ccc;
+                -webkit-transition:width 1s, background-color 2s, color 1s; 
+                }
+                input:hover { width:200px;background-color:#000;color:#f00;}
+                
+                
+                </style>
+    </head>
+    <body>
+        <form id="ID" name="przelew">
+            <label id="Imię">Imię: </label>
+            <input type="text" id="imię" name="imię" placeholder="Podaj imię">
+            <br>
+            <label id="Nzawisko">Nazwisko: </label>
+            <input type="text" id="nazwisko" name="nazwisko" placeholder="Podaj nazwisko">
+            <br>
+            <label id="Adres">Adres: </label>
+            <input type="text" id="ardes" name="ardes" placeholder="Podaj ardes">
+            </form>
+            <a href="#">Wyślij</a>
+    </body>
+</html>
