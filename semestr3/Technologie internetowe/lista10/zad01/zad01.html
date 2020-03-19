@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>zad01</title>
+
+        <script src="jquery-3.1.1.js" type="text/javascript"> </script>
+        <script type="text/javascript">
+            const $form = $(".form");
+            const $inputImie = $("#inpImie");
+            const $inputNazw = $("#inpNazwisko");
+            const $inputMali = $("#inpMail");
+            const $submitBtn = $form.find(":submit");
+            $form.on("submit", function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: apiUrl + "/posts",
+                    method : "POST",
+                    dataType : "json",
+                    data : {
+                        imie : $inputImie.val(),
+                        nazwisko : $inputNazw.val(),
+                        mail: $inputMali.val()
+                    }
+                })
+                
+            });
+            
+        </script>
+    </head>
+    <body>
+        <form name='myForm'>
+            <div>
+                <label for="inputImie">Imię</label>
+                <input type="text" id="inputImie">
+            </div>
+            <div>
+                <label for="inpNazwisko">Nazwisko</label>
+                <input id="inpNazwisko"></input>
+            </div>
+            <div>
+                <label for="inpMali">Mail</label>
+                <input id="inpMali"></input>
+            </div>
+            <div>
+                <button type="submit" class="button">Wyślij</button>
+            </div>
+        </form>
+    </body>
+</html>
