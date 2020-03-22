@@ -1,3 +1,0 @@
-Bugi bez zdjęć:
-1. Przy wybieraniu siekiery gdy trzyma się drzewo, gra się na chwilę zacina na ekranie ekwipunku.
-2. Jeżeli przy ścinaniu drzewa włączymy/wyłączymy latarkę, siekiera znika nam z rąk, możemy jednak dalej dokończyć ścinanie drzewa, później jednak nie możemy nic ścinać, ani podnosić innych drzew.
