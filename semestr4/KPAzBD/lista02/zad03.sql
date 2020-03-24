@@ -14,7 +14,6 @@ begin
 		select t.czytelnik_id, SUM(w.Liczba_Dni) as SumarycznaLiczbaDni from @tab t
 		join Wypozyczenie w on w.Czytelnik_ID=t.czytelnik_id
 		group by t.czytelnik_ID
-	return
 end
 go
 
