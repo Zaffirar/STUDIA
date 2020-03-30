@@ -6,4 +6,8 @@
     <RootNamespace>zad1._1</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Wiktor\Desktop\STUDIA\semestr4\programowanie .NET\Lista01\zad1.1\zad1.1.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

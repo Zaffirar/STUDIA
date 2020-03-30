@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>zad1.1</name>
+    </assembly>
+    <members>
+        <member name="T:zad1._1.CMain">
+            <summary>
+            Główna klasa programu
+            </summary>
+        </member>
+        <member name="M:zad1._1.CMain.ListaISumaCyfr(System.Int32)">
+            <summary>
+            Metoda przyjmuje liczbę i zwraca listę jej cyfr i na koniec listy dodaje sumę cyfr tej liczby 
+            </summary>
+            <param name="a">liczba do rozłożenia</param>
+            <returns>Lista cyfr i sumy cyfr liczby a</returns>
+        </member>
+        <member name="M:zad1._1.CMain.Main">
+            <summary>
+            Główna metoda programu
+            </summary>
+        </member>
+    </members>
+</doc>

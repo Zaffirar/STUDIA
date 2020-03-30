@@ -11,3 +11,4 @@ C:\Users\Wiktor\Desktop\STUDIA\semestr4\programowanie .NET\Lista01\zad1.1\obj\De
 C:\Users\Wiktor\Desktop\STUDIA\semestr4\programowanie .NET\Lista01\zad1.1\obj\Debug\netcoreapp3.1\zad1.1.dll
 C:\Users\Wiktor\Desktop\STUDIA\semestr4\programowanie .NET\Lista01\zad1.1\obj\Debug\netcoreapp3.1\zad1.1.pdb
 C:\Users\Wiktor\Desktop\STUDIA\semestr4\programowanie .NET\Lista01\zad1.1\obj\Debug\netcoreapp3.1\zad1.1.genruntimeconfig.cache
+C:\Users\Wiktor\Desktop\STUDIA\semestr4\programowanie .NET\Lista01\zad1.1\bin\Debug\netcoreapp3.1\zad1.1.xml
