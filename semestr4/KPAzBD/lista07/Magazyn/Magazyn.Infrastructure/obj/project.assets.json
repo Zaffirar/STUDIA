@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Wiktor\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\wikto\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Infrastructure\\Magazyn.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Infrastructure\\Magazyn.Infrastructure.csproj",
       "projectName": "Magazyn.Infrastructure",
-      "projectPath": "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Infrastructure\\Magazyn.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Wiktor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Infrastructure\\Magazyn.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\wikto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Wiktor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wikto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj": {}
+    "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj": {
+    "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj",
         "projectName": "Magazyn.Domain",
-        "projectPath": "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj",
-        "packagesPath": "C:\\Users\\Wiktor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wiktor\\Desktop\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\obj\\",
+        "projectPath": "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\Magazyn.Domain.csproj",
+        "packagesPath": "C:\\Users\\wikto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wikto\\Documents\\GitHub\\STUDIA\\semestr4\\KPAzBD\\lista07\\Magazyn\\Magazyn.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Wiktor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wikto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
